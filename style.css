@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: mediumaquamarine;
+}
+
+.container{
+    height: 90%;
+    width: 80%;
+    display: grid;
+    grid-template-areas: 
+    "fig1 fig3 fig5 fig5"
+    "fig1 fig4 fig6 fig7"
+    "fig2 fig4 fig8 fig8";
+    grid-gap: 2%;
+}
+
+.fig1{
+    grid-area: fig1;
+    background-image: url(https://pics.filmaffinity.com/The_Last_of_Us_Serie_de_TV-722385305-large.jpg);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.fig2{
+    grid-area: fig2;
+    background-image: url(https://www.egames.news/__export/1674836196372/sites/debate/img/2023/01/27/the-last-of-us-hbo-5.jpg_423682103.jpg);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.fig3{
+    grid-area: fig3;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjHq70pt5qyorGb0jZ0OyGAi-koSPbubilvzBBvMZgbeqf_n65N6yl_LJy7NPQlKUJxuM&usqp=CAU);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.fig4{
+    grid-area: fig4;
+    background-image: url(https://media.vogue.mx/photos/63cda808a74326f5a8437710/2:3/w_2560%2Cc_limit/the-last-of-us-bella-ramsey-pedro-pascal.jpg);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.fig5{
+    grid-area: fig5;
+    background-image: url(https://imagenes.20minutos.es/files/image_990_v3/uploads/imagenes/2023/01/06/last-of-us.jpeg);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.fig6{
+    grid-area: fig6;
+    background-image: url(data:image/jpeg;base64,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);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.fig7{
+    grid-area: fig7;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhinw0EZRoaaWgETWPO65r_bfMaVHrifGKUo0l2aNPuVGFADXk3IxsucsIGgDbwEgBuzY&usqp=CAU);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.fig8{
+    grid-area: fig8;
+    background-image: url(https://media.tycsports.com/files/2023/03/13/544476/the-last-of-us-serie_416x234.webp);
+    background-size: cover;
+    border-radius: 10px;
+}
